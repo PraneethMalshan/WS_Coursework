@@ -39,7 +39,7 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/$service:latest
         done
 
-    # Step 5: Clean up Docker resources after build to free space 
+    # Step 5: Clean up Docker resources after build to free space
     - name: Clean up
       run: |
         docker system prune -af
